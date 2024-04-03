@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location},UK&appid=40ca911e3bcfb024b6fdd0a7a808d47a`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location},${location}&appid=40ca911e3bcfb024b6fdd0a7a808d47a`
 
 const searchLocation = (event) => {
   if (event.key === 'Enter') {
@@ -15,6 +15,7 @@ const searchLocation = (event) => {
       setData(response.data)
       console.log(response.data)
     })
+    setLocation('') // Clear input box after execution
   }
 }
 

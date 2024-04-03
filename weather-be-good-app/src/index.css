@@ -85,3 +85,21 @@ h1 {
 .bold {
   font-weight: 900;
 }
+
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.app input {
+  padding: 0.8rem 1rem;
+  font-size: 1.4rem;
+  border-radius: 25px;
+  border: 1px solid rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.1);
+  color: white;
+}
+
+::placeholder {
+  color:antiquewhite
+}
