@@ -31,8 +31,7 @@ const searchLocation = (event) => {
       <div className="container">
         <div className="top">
           <div className="location">
-            {data.name ? <p>{data.name}</p>: null} 
-            {data.sys ? <p>{data.sys.country}</p> : null}
+            {data.name ? <p>{data.name}, {data.sys.country}</p> : null}
           </div>
           <div className="temp">
             {data.main ? <h1>{data.main.temp.toFixed()}°C</h1> : null}
