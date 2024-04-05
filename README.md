@@ -31,7 +31,7 @@ Following is an image of the application and the deployed link:
 
 ![weather_ss](https://github.com/SalmY001/react-weather/assets/80605132/224e5f7b-7a31-4fc6-967b-96314272320d)
 
-https://salmy001.github.io/react-portfolio/
+https://salmy001.github.io/react-weather/
 
 ## License
 
