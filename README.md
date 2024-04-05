@@ -29,7 +29,8 @@ npm start
 
 Following is an image of the application and the deployed link:
 
-![Alt text](public/images/weather_ss.jpg)
+![Alt text](public/images![weather_ss](https://github.com/SalmY001/react-weather/assets/80605132/98286740-bbc9-42f8-ba15-6b6bcf226a71)
+/weather_ss.jpg)
 
 https://salmy001.github.io/react-portfolio/
 
