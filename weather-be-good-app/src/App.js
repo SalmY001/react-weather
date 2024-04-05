@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
-
+  //fetch weather conditions using api
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&{country}&units=metric&appid=d81b4abec14d3e396ac406c839ae4bcb`
 
 const searchLocation = (event) => {
@@ -18,7 +18,7 @@ const searchLocation = (event) => {
     setLocation('') // Clear input box after execution
   }
 }
-
+  // return weather location data from user input
   return (
     <div className="app">
       <div className='search'>
@@ -29,7 +29,8 @@ const searchLocation = (event) => {
         type='text'/>
       </div>
       <div className="container">
-        <div className="top">
+        {/* populate key weather conditions near top of screen*/}
+        <div className="top"> 
           <div className="location">
             {data.name ? <p>{data.name}, {data.sys.country}</p> : null}
           </div>
@@ -42,7 +43,8 @@ const searchLocation = (event) => {
         </div>
 
         {data.name !== undefined && // Clear screen
-        <div className="bottom">
+        //add addition weather conditions towards bottom of screen
+        <div className="bottom"> 
           <div className="feels_like">
            {data.main ? <p className='bold'>{data.main.feels_like.toFixed()}°C</p> : null}
             <p>Feels Like</p>
